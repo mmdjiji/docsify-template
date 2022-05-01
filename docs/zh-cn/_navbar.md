@@ -1,0 +1,4 @@
+- [首页](/)
+- Translation
+  - [:cn: 中文](/zh-cn/)
+  - [:us: English](/)

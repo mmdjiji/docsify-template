@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Docsify Template</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="./static/vue.css">
+  <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css"> -->
+</head>
+<body>
+  <div id="app"></div>
+  <script>
+    // Set html "lang" attribute based on URL
+    const lang = location.hash.match(/#\/(de-de|es|ru-ru|zh-cn)\//);
+    if (lang) {
+      document.documentElement.setAttribute('lang', lang[1]);
+    }
+
+    window.$docsify = {
+      loadNavbar: true,
+      loadSidebar: true,
+      coverpage: ['/', '/zh-cn/'],
+      subMaxLevel: 2,
+      name: 'Docsify Template',
+      repo: 'https://github.com/mmdjiji/docsify-template',
+      nameLink: {
+        '/': '#/',
+        '/zh-cn/': '#/zh-cn/'
+      },
+      search: {
+        noData: {
+          '/': '😒No results!',
+          '/zh-cn/': '😒找不到结果!'
+        },
+        paths: 'auto',
+        placeholder: {
+          '/': '🔍Search',
+          '/zh-cn/': '🔍搜索'
+        },
+        pathNamespaces: ['/zh-cn']
+      },
+      copyCode: {
+        buttonText: 'Copy',
+        errorText: 'Error',
+        successText: 'OK!'
+      }
+    }
+  </script>
+  <!-- Docsify v4 -->
+  <!-- <script src="//cdn.jsdelivr.net/npm/docsify@4"></script> -->
+  <script src="./static/docsify@4.js"></script>
+  <script src="./static/docsify-copy-code.js"></script>
+  <script src="./static/zoom-image.min.js"></script>
+  <script src="./static/search.min.js"></script>
+  <script src="./static/emoji.min.js"></script>
+  <script src="./static/docsify-plugin-flexible-alerts.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "name": "docsify-template",
+  "version": "1.0.0",
+  "description": "Docsify Template",
+  "main": "index.js",
+  "scripts": {
+    "dev": "docsify serve docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmdjiji/docsify-template.git"
+  },
+  "author": "JiJi <i@mmdjiji.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mmdjiji/docsify-template/issues"
+  },
+  "homepage": "https://github.com/mmdjiji/docsify-template#readme"
+}
